@@ -39,9 +39,10 @@ public class RandomRecordGeneratorServiceImpl implements RandomRecordGeneratorSe
   private EntityManager em;
 
   @Override
-  public void generate(int recordCount) {
+  public void generate(Integer recordCount) {
 
-    if (recordCount == 0) {
+    if (recordCount == null
+        || recordCount == 0) {
       recordCount = DEFAULT_COUNT;
     }
 

@@ -8,8 +8,7 @@ public interface RandomRecordGeneratorService {
   /**
    * This method is for generating random records in the database.
    * If recordCount is 0, the default of 100,000 will be generated
-   * @param recordCount
    */
-  void generate(final int recordCount);
+  void generate(Integer recordCount);
 
 }
