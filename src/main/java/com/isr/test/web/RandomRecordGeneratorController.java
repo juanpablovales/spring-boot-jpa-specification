@@ -23,7 +23,7 @@ public class RandomRecordGeneratorController {
    * @param recordCount - numnber of records to generate
    */
   @GetMapping
-  public void generate(@RequestParam(value = "recordCount", required = false) int recordCount) {
+  public void generate(@RequestParam(value = "recordCount", required = false) Integer recordCount) {
     randomRecordGeneratorService.generate(recordCount);
 
   }

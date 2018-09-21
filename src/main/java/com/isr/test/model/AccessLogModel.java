@@ -11,7 +11,7 @@ import javax.persistence.TemporalType;
 /**
  * Created by gfs on 17/09/2018.
  */
-@Table(name = "access_log")
+@Table(name = "login")
 @Entity
 public class AccessLogModel extends AbstractBaseModel {
 
