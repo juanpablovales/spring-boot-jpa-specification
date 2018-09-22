@@ -15,7 +15,7 @@ public interface AccessLogRepository extends JpaRepository<AccessLogModel, Long>
     JpaSpecificationExecutor {
 
   @Query(nativeQuery = true, value = "SELECT DISTINCT CAST(CAST(login_time as DATE) AS char)"
-      + " FROM access_log")
+      + " FROM login")
   List<String> findDistinctDates();
 
 }
