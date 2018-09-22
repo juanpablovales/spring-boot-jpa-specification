@@ -8,6 +8,9 @@
 5. MySQL
 6. Hibernate/JPA
 
+## Updating Database credential
+1. Update database credentials in RepositoryConfig.datasource method.
+
 ## Running the project
 1. Build project using mvn clean install
 2. Run the project using mvn spring-boot:run.
